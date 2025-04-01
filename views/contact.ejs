@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact ME</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/projects">projects</a>
+      <a id="contact" href="/contact">contact</a>
+    </nav>
+    <section id="main">
+      <h1>Contact</h1>
+      <form action="/submit-form" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <div id="app"></div>
+      <a href="">
+        <i class="devicon-github-original"></i>
+      </a>
+      <a href="">
+        <i class="devicon-linkedin-plain"></i>
+      </a>
+      <p>@2025 Min Okkar</p>
+    </footer>
+  </body>
+</html>
