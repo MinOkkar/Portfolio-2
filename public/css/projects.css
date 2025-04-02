@@ -51,4 +51,8 @@ img {
   #Projects {
     grid-template-columns: 1fr;
   }
+  .date {
+    padding-left: 70%;
+    color: rgba(255, 255, 255, 0.486);
+  }
 }
