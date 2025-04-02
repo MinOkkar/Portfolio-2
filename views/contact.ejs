@@ -20,11 +20,21 @@
     </nav>
     <section id="main">
       <h1>Contact</h1>
-      <form action="/submit-form" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
+      <form id="form" action="/submit-form" method="POST">
+        <input id="name" type="text" name="name" placeholder="Your Name" />
+        <input id="email" type="email" name="email" placeholder="Your Email" />
+        <textarea id="msg" name="message" placeholder="Your Message"></textarea>
         <button type="submit">Send</button>
+
+        <span id="emailError" style="color: red; display: none"
+          >Invalid email format</span
+        >
+        <span id="nameError" style="color: red; display: none">
+          Name must be at least 2 characters long
+        </span>
+        <span id="msgError" style="color: red; display: none"
+          >Message must be at least 10 characters.</span
+        >
       </form>
     </section>
     <footer>
@@ -37,5 +47,7 @@
       </a>
       <p>@2025 Min Okkar</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.7.0/validator.min.js"></script>
+    <script src="/script/contact.js"></script>
   </body>
 </html>
